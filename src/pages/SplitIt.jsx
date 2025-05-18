@@ -1,9 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 export default function SplitIt() {
   return (
-    <section className="min-h-screen py-20 px-6 max-w-3xl mx-auto">
+    <motion.section
+      className="min-h-screen py-20 px-6 max-w-3xl mx-auto"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.3 }}
+    >
       <Link to="/" className="text-blue-600 dark:text-blue-400 underline mb-4 block">← Back to Home</Link>
       <h1 className="text-4xl font-bold mb-4">Split It – Group Expense App</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -42,6 +49,6 @@ export default function SplitIt() {
           💻 View Code
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }
