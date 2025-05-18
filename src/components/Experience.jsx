@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const experiences = [
   {
@@ -23,10 +24,23 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="py-20 px-6 max-w-3xl mx-auto">
+    <motion.section
+      className="py-20 px-6 max-w-3xl mx-auto"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-3xl font-semibold mb-8">Experience</h2>
       {experiences.map((job, i) => (
-        <div key={i} className="mb-8">
+        <motion.div
+          key={i}
+          className="mb-8"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.1 }}
+          viewport={{ once: true }}
+        >
           <h3 className="text-xl font-bold">{job.role}</h3>
           <div className="text-gray-600 dark:text-gray-400 flex justify-between">
             <span>{job.company}</span>
@@ -35,8 +49,8 @@ export default function Experience() {
           <ul className="mt-2 list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             {job.bullets.map((item, j) => <li key={j}>{item}</li>)}
           </ul>
-        </div>
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -23,14 +24,21 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-20 px-6 max-w-4xl mx-auto">
+    <motion.section
+      className="py-20 px-6 max-w-4xl mx-auto"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-3xl font-semibold mb-8">Projects</h2>
       <div className="grid gap-6">
         {projects.map((project, i) => (
-          <a
+          <motion.a
             key={i}
             href={project.link}
             className="block border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:shadow-md transition"
+            whileHover={{ scale: 1.02 }}
           >
             <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
@@ -41,9 +49,9 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </a>
+          </motion.a>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
