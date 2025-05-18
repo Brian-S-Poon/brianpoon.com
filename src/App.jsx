@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import SplitIt from './pages/SplitIt';
 import ThemeToggle from './components/ThemeToggle';
 
@@ -15,6 +16,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/projects/split-it" element={<SplitIt />} />
         </Routes>
       </AnimatePresence>
