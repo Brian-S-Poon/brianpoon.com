@@ -1,20 +1,22 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header.jsx';
-import Home from './pages/Home.jsx';
-import Projects from './pages/Projects.jsx';
-import About from './pages/About.jsx';
-import Contact from './pages/Contact.jsx';
+import React from 'react';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen font-sans text-gray-800">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
+    <main className="bg-white text-black dark:bg-black dark:text-white font-sans">
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
+
+export default App;
