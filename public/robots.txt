@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brianpoon.com/sitemap.xml
