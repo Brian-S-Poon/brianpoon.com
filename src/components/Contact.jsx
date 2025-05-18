@@ -15,10 +15,10 @@ export default function Contact() {
         Want to work together or just say hi?
       </p>
       <a
-        href="mailto:brian@example.com"
+        href="mailto:brian@brianpoon.com"
         className="text-blue-600 dark:text-blue-400 underline hover:opacity-80 transition"
       >
-        brian@example.com
+        brian@brianpoon.com
       </a>
     </motion.section>
   );
