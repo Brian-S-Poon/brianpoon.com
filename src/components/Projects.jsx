@@ -61,6 +61,15 @@ export default function Projects() {
           );
         })}
       </div>
+
+      <div className="mt-10 text-center">
+        <Link
+          to="/projects"
+          className="inline-block text-blue-600 dark:text-blue-400 font-medium underline underline-offset-4 hover:opacity-80 transition"
+        >
+          View all projects →
+        </Link>
+      </div>
     </motion.section>
   );
 }
