@@ -1,22 +1,17 @@
 import React from 'react';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SplitIt from './pages/SplitIt';
 import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
     <main className="bg-white text-black dark:bg-black dark:text-white font-sans">
       <ThemeToggle />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/split-it" element={<SplitIt />} />
+      </Routes>
     </main>
   );
 }
