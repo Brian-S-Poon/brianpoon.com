@@ -5,6 +5,8 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import SplitIt from './pages/SplitIt';
+import Now from './pages/Now';
+
 import ThemeToggle from './components/ThemeToggle';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/split-it" element={<SplitIt />} />
+          <Route path="/now" element={<Now />} />
+
         </Routes>
       </AnimatePresence>
     </main>
