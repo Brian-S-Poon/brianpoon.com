@@ -33,14 +33,6 @@ export default function SplitIt() {
 
       <div className="flex flex-wrap gap-4">
         <a
-          href="https://splitit.brianpoon.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition"
-        >
-          🔗 View Live
-        </a>
-        <a
           href="https://github.com/Brian-S-Poon/split-it"
           target="_blank"
           rel="noopener noreferrer"
