@@ -1,8 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="py-20 px-6 max-w-3xl mx-auto">
+    <motion.section
+      className="py-20 px-6 max-w-3xl mx-auto"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-3xl font-semibold mb-6">About</h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
         I’m a software engineer based in California, experienced in full-stack development and cloud infrastructure.
@@ -25,6 +32,6 @@ export default function About() {
       >
         Download Resume
       </a>
-    </section>
+    </motion.section>
   );
 }
