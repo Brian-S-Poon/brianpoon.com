@@ -8,15 +8,15 @@ export default function Hero() {
         className="text-5xl font-bold tracking-tight mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 0.1, duration: 0.6 }}
       >
         Brian Poon
       </motion.h1>
       <motion.h2
         className="text-xl text-gray-600 dark:text-gray-400"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
       >
         Software Engineer & Cloud Developer
       </motion.h2>
@@ -24,7 +24,7 @@ export default function Hero() {
         className="mt-6 max-w-xl text-lg text-gray-700 dark:text-gray-300"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
       >
         I build tools that solve real-world problems.
       </motion.p>

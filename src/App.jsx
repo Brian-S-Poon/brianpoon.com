@@ -8,6 +8,8 @@ import SplitIt from './pages/SplitIt';
 import Blog from './pages/Blog';
 import Post from './pages/Post';
 import Now from './pages/Now';
+import NotFound from './pages/NotFound';
+
 import ThemeToggle from './components/ThemeToggle';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -26,6 +28,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<Post />} />
           <Route path="/now" element={<Now />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
     </main>
