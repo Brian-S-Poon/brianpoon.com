@@ -9,18 +9,7 @@ const projects = [
     stack: ['React', 'Tailwind', 'Supabase'],
     route: '/projects/split-it',
   },
-  {
-    title: 'ProxiPal',
-    description: 'Real-time proximity-based friend finder with Google Maps API.',
-    stack: ['Flutter', 'Firebase'],
-    link: '#',
-  },
-  {
-    title: 'Budget Manager',
-    description: 'Track income, expenses, and financial goals with graphs.',
-    stack: ['Python', 'SQLite', 'Tkinter'],
-    link: '#',
-  },
+
 ];
 
 export default function Projects() {
