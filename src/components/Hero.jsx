@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -28,6 +29,33 @@ export default function Hero() {
       >
         I build tools that solve real-world problems.
       </motion.p>
+
+      {/* Social links */}
+      <motion.div
+        className="mt-6 flex gap-6"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7, duration: 0.6 }}
+      >
+        <a
+          href="https://github.com/Brian-S-Poon"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-500 hover:text-black dark:hover:text-white transition text-2xl"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/brian-s-poon/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition text-2xl"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+      </motion.div>
     </section>
   );
 }
