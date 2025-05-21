@@ -4,25 +4,27 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
       <motion.h1
-        className="text-5xl font-bold tracking-tight mb-4"
+        className="text-5xl sm:text-6xl font-bold tracking-tight leading-tight mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.6 }}
       >
         Brian Poon
       </motion.h1>
+
       <motion.h2
-        className="text-xl text-gray-600 dark:text-gray-400"
+        className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        Software Engineer & Cloud Developer
+        Software Engineer
       </motion.h2>
+
       <motion.p
-        className="mt-6 max-w-xl text-lg text-gray-700 dark:text-gray-300"
+        className="max-w-xl text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
