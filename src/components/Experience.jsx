@@ -13,14 +13,14 @@ const experiences = [
     tools: 'Rails, Playwright, GitLab CI, JavaScript',
   },
   {
-    role: 'Cloud Engineer Intern',
+    role: 'Cloud Engineering Intern',
     company: 'vRotors Inc.',
     date: 'Oct 2023 – Jun 2024',
     bullets: [
       'Configured GCP firewall rules, VPN access, backups, and intrusion detection systems',
       'Scheduled automated backups with Cloud Backup & DR for multi-region GCP instances',
     ],
-    tools: 'GCP, AWS, Firewalls, Load Balancing, VPN',
+    tools: 'Google Cloud Platform, Amazon Web Services',
   },
 ];
 
