@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const experiences = [
   {
     role: 'Software Engineer',
-    company: 'Phluid (Startup)',
+    company: 'Phluid',
     date: 'Apr 2025 – Present',
     bullets: [
       'Wrote end-to-end tests using Playwright and configured GitLab CI pipelines',
