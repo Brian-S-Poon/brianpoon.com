@@ -24,14 +24,6 @@ export default function About() {
           </span>
         ))}
       </div>
-
-      <a
-        href="/Brian-Poon-Resume.pdf"
-        download
-        className="inline-block text-sm px-4 py-2 mt-6 border border-black dark:border-white rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-      >
-        Download Resume
-      </a>
     </motion.section>
   );
 }

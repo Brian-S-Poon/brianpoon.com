@@ -8,14 +8,7 @@ export default function Footer() {
       <p className="mt-2 space-x-2">
         <Link to="/now" className="underline hover:text-blue-500 dark:hover:text-blue-400">Now</Link> ·
         <Link to="/blog" className="underline hover:text-blue-500 dark:hover:text-blue-400">Blog</Link> ·
-        <Link to="/projects" className="underline hover:text-blue-500 dark:hover:text-blue-400">Projects</Link> ·
-        <a
-          href="/Brian-Poon-Resume.pdf"
-          download
-          className="underline hover:text-blue-500 dark:hover:text-blue-400"
-        >
-          Resume
-        </a>
+        <Link to="/projects" className="underline hover:text-blue-500 dark:hover:text-blue-400">Projects</Link>
       </p>
     </footer>
   );
