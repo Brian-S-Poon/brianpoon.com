@@ -18,9 +18,9 @@ const experiences = [
     date: 'Oct 2023 – Jun 2024',
     bullets: [
       'Configured GCP firewall rules, VPN access, backups, and intrusion detection systems',
-      'Implemented object detection using Google Cloud Video Intelligence API',
+      'Scheduled automated backups with Cloud Backup & DR for multi-region GCP instances',
     ],
-    tools: 'GCP, Cloud Video Intelligence API, Firewalls, VPN, Backup',
+    tools: 'GCP, AWS, Firewalls, Load Balancing, VPN',
   },
 ];
 
