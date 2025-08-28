@@ -6,8 +6,8 @@ export default function Header() {
       <Link to="/" className="text-xl font-bold">Brian Poon</Link>
       <nav className="space-x-4">
         <Link to="/projects" className="text-gray-700 hover:underline">Projects</Link>
-        <Link to="/about" className="text-gray-700 hover:underline">About</Link>
-        <Link to="/contact" className="text-gray-700 hover:underline">Contact</Link>
+        <Link to="/blog" className="text-gray-700 hover:underline">Blog</Link>
+        <Link to="/now" className="text-gray-700 hover:underline">Now</Link>
       </nav>
     </header>
   );

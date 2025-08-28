@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 
 import ThemeToggle from './components/ThemeToggle';
 import ScrollToTop from './components/ScrollToTop';
+import Header from './components/Header';
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
     <main className="bg-white text-black dark:bg-black dark:text-white font-sans">
       <ThemeToggle />
       <ScrollToTop />
+      <Header />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
