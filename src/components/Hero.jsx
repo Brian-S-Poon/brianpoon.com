@@ -23,21 +23,12 @@ export default function Hero() {
         Software Engineer
       </motion.h2>
 
-      <motion.p
-        className="max-w-xl text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
+      {/* Social links */}
+      <motion.div
+        className="mt-4 flex gap-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-      >
-        I build tools that solve real-world problems.
-      </motion.p>
-
-      {/* Social links */}
-      <motion.div
-        className="mt-6 flex gap-6"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 0.6 }}
       >
         <a
           href="https://github.com/Brian-S-Poon"
