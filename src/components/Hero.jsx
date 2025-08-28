@@ -1,30 +1,30 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
-      <motion.h1
+      <Motion.h1
         className="text-5xl sm:text-6xl font-bold tracking-tight leading-tight mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.6 }}
       >
         Brian Poon
-      </motion.h1>
+      </Motion.h1>
 
-      <motion.h2
+      <Motion.h2
         className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         Software Engineer
-      </motion.h2>
+      </Motion.h2>
 
       {/* Social links */}
-      <motion.div
+      <Motion.div
         className="mt-4 flex gap-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
         >
           <FaLinkedin />
         </a>
-      </motion.div>
+      </Motion.div>
     </section>
   );
 }
