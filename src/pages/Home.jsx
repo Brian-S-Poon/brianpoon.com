@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       transition={{ duration: 0.3 }}
     >
       <Hero />
-      <Contact />
       <Footer />
     </motion.div>
   );
